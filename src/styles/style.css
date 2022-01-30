@@ -1,0 +1,111 @@
+/* ***********CSS Reset*************** */
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+/* ***********CSS Reset END*************** */
+
+/* Your style */
+.con-logo a img{
+    width: 50px;
+    background-color: rgb(229, 242, 250);
+    padding: .5rem;
+    border-radius: 50%;
+}
+.con-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #555;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.con-flex .hero-links ul{
+    display: flex;
+    padding: 1rem 0;
+}
+.con-flex .hero-links ul li{
+    margin-left: 2rem;
+}
+.con-flex .hero-links ul li a{
+    color: black;
+    font-size: 1.25rem;
+}
+.search-tags{
+    height: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #555;
+    border-top: none;
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.search-tags .search-tags__container{
+    height: inherit;
+}
+.search-tags__container ul{
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-tags__container ul li{
+    margin-left: 1rem;
+}
+
+.search-tags__container ul li a{
+    font-size: .5rem;
+}
+
+/*  */
+.main-content{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.g3-col{
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.weblog-post__desc h3{
+    padding: .5rem 0;
+}
+.weblog-post .post-prev{
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+@media (min-width: 600px) {
+    .search-tags__container ul li a{
+        font-size: 1rem;
+    }
+}
