@@ -3,6 +3,7 @@ const path = require('path');
 const ejs = require('ejs');
 
 const app = express();
+const PORT = 3000||process.env.PORT;
 
 app.use(express.static('public'));
 app.use('/public/img',express.static('./public/img'));
@@ -21,6 +22,6 @@ app.get('/login', (req, res)=>{
 app.get('/post', (req, res)=>{
     res.render('post')
 })
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('server is running on port 3000');
 })
